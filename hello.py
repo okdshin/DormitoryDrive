@@ -1,11 +1,11 @@
 import os
-from flask import Flask
+import flask
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'this is index page'
+    return flask.render_template("index.html")
 
 @app.route('/hello')
 def hello():
