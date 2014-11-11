@@ -13,7 +13,7 @@ In DormitoryDrive root directory, command below
 virtualenv env  
 source ./env/bin/activate  
 pip install -r requirements.txt  
-sh init.sh  
+python init_db.py
 ```
 
 How to run Debug server
