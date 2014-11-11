@@ -1,6 +1,11 @@
 DormitoryDrive
 ===============
 
+What is in need
+----------------
+* python3
+* ffmpeg
+
 How to setup
 ---------------
 In DormitoryDrive root directory, command below
