@@ -1,7 +1,7 @@
 DormitoryDrive
 ===============
 
-What is in need
+Requirements
 ----------------
 * python3
 * ffmpeg
