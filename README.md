@@ -3,10 +3,10 @@ DormitoryDrive
 
 How to install
 ---------------
-virtualenv env
-source ./env/bin/activate
-pip install -r requirements.txt
-sh init.sh
+virtualenv env  
+source ./env/bin/activate  
+pip install -r requirements.txt  
+sh init.sh  
 
 How to run Debug server
 ------------------------
