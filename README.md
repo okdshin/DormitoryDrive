@@ -1,7 +1,7 @@
 DormitoryDrive
 ===============
 
-How to install
+How to setup
 ---------------
 In DormitoryDrive root directory, command below
 ```
