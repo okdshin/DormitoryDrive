@@ -14,19 +14,17 @@
 		  <div class="row row-offcanvas row-offcanvas-right">
 			<div class="col-xs-12 col-sm-9">
 			  <div class="jumbotron">
-				<h1>DormitoryDrive</h1>
-				<p>This is the File Uploader / Viewer in this dorm.</p>
+				<h1>DormitoryDrive.Upload</h1>
+				<p>You are not only a Consumer but also...</p>
 			  </div>
-        <form class="navbar-form navbar-center" method=post role="form">
+        <form action='' method=post enctype=multipart/form-data class="navbar-form navbar-center" role="form">
           <div class="form-group">
-            <input type="text" name=keyword placeholder="keyword" class="form-control">
+            <input type=file name=file placeholder="file path" class="form-control">
+            <input type=submit value=Upload class="btn btn-success">
           </div>
-          <button type=submit class="btn btn-success">Search</button>
-          <a href="/upload">Upload</a>
         </form>
-        {% block file_list %}{% endblock %}
         <footer>
-          {{footer}}
+          <p>&copy; Netkai (Wirelessia) 2014</p>
         </footer>
       </div>
       </div>

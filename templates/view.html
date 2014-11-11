@@ -14,20 +14,26 @@
 		  <div class="row row-offcanvas row-offcanvas-right">
 			<div class="col-xs-12 col-sm-9">
 			  <div class="jumbotron">
-				<h1>DormitoryDrive</h1>
-				<p>This is the File Uploader / Viewer in this dorm.</p>
+				<h1>DormitoryDrive.View</h1>
+				<p>You can view it.</p>
 			  </div>
-        <form class="navbar-form navbar-center" method=post role="form">
-          <div class="form-group">
-            <input type="text" name=keyword placeholder="keyword" class="form-control">
-          </div>
-          <button type=submit class="btn btn-success">Search</button>
-          <a href="/upload">Upload</a>
-        </form>
-        {% block file_list %}{% endblock %}
+		    <div class="row row-offcanvas row-offcanvas-right">
+        <a href={{furl}} download={{filename}}>Download</a>
+        </div>
+		    <div class="row row-offcanvas row-offcanvas-right">
+        {% if filetype == 'video' %}
+          <video width="640" height="480" controls>
+            <source src={{furl}}.ogv type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        {% endif %}
+        {% if filetype == 'image' %}
+          <img src={{furl}} class="img-responsive" alt={{id}}>
+        {% endif %}
         <footer>
-          {{footer}}
+          <p>{{footer}}</p>
         </footer>
+        </div>
       </div>
       </div>
 	</div><!--/.container-->
