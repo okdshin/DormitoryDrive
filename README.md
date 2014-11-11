@@ -31,3 +31,10 @@ In DormitoryDrive root directory, command below
 foreman start
 ```
 then access to localhost:5000
+
+How to reset DB
+----------------
+In DormitoryDrive root directory, command below
+```
+sh init.sh
+```
